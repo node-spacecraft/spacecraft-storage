@@ -1,0 +1,36 @@
+{
+  "name": "spacecraft-storage",
+  "version": "0.0.1",
+  "description": "sql component",
+  "main": "index.js",
+  "scripts": {
+    "test": "SCL_SILENT=true jest --forceExit --coverage",
+    "coverage": "cat ./coverage/lcov.info | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/node-spacecraft/spacecraft-storage.git"
+  },
+  "keywords": [
+    "storage",
+    "sql",
+    "spacecraft"
+  ],
+  "author": "moonrailgun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/node-spacecraft/spacecraft-storage/issues"
+  },
+  "homepage": "https://github.com/node-spacecraft/spacecraft-storage#readme",
+  "dependencies": {
+    "mkdirp": "^0.5.1",
+    "sequelize": "^4.8.4",
+    "spacecraft": "^1.0.1",
+    "spacecraft-logger": "^1.1.0",
+    "sqlite3": "^3.1.11"
+  },
+  "devDependencies": {
+    "coveralls": "^2.13.1",
+    "jest": "^21.1.0"
+  }
+}
